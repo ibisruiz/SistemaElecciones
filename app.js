@@ -10,17 +10,15 @@ app.set("views", "views");
 
 app.use(express.static(path.join(__dirname, "public")));
 
+const errorController = require("./controllers/ErrorController")
+
 const adminRoute = require("./routes/admin");
 const electorRoute = require("./routes/elector");
 
-app.use(adminRoute);
+app.use("/admin", adminRoute);
 app.use(electorRoute);
 
-app.use((req, res, next) =>{
-
-    res.status(404).render("404",{layout:false, pageTitle: "Not found"});
-
-});
+app.use("/", errorController.GetNotFound);
 
 
 app.listen(5051);

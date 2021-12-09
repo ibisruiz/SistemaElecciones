@@ -1,17 +1,11 @@
 const express = require("express");
 const router = express.Router();
+const AdminController = require("../controllers/AdminController");
 
-router.get("/admin", (req, res, next)=>{
 
-    console.log("por get");
-    res.status(200).render("admin-home",{layout:false});
-});
+router.get("/index", AdminController.GetAdminHome);
 
-router.post("/admin", (req, res, next)=>{ 
-
-    console.log("por post");
-    res.status(200).render("admin-home",{layout:false});
-});
+router.post("/index", AdminController.PostAdminHome);
 
 
 module.exports = router;
