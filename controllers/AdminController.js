@@ -27,3 +27,20 @@ exports.GetMantCiudadanos = (req, res, next) => {
 exports.GetMantElecciones = (req, res, next) => {
     res.status(200).render("admin/Elecciones", {layout:false})
 };
+
+//VISTAS MODIFICACION PUESTO ELECTIVOS
+
+exports.GetModiPuestosElectivos = (req, res, next) => {
+    res.status(200).render("admin/Puestos-Electivos-Modificacion", {layout:false})
+};
+
+exports.PostModiPuestosElectivos = (req, res, next) => {
+    const name = req.body.Name;
+    const description = req.body.Description;
+
+    console.log(name);
+    console.log(description);
+
+    res.redirect("/puestos-electivos-mantenimiento");
+
+};

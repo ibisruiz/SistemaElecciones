@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/vendors/bootstrap/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/custom/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="row">
+
+        <div class="col-md-4"></div>
+
+        <div class="col md-4 mt-5">
+
+            <a href="/puestos-electivos-mantenimiento" class="btn btn-link mb-2" >Atrás</a>
+            <div class="card-header bg-dark text-white mb-2"> Creacion de puestos electivos</div>
+
+            <form method="post" action="/puestos-electivos-modificacion">                
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="Name"/>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label" >Descripcion</label>
+                    <input type="text" class="form-control" id="description" name="Description"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="col-md-4"></div>
+    </div>
+
+    <script src="/assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>
