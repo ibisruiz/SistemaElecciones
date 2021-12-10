@@ -11,11 +11,10 @@ app.set("views", "views");
 app.use(express.static(path.join(__dirname, "public")));
 
 const errorController = require("./controllers/ErrorController")
-
 const adminRoute = require("./routes/admin");
 const electorRoute = require("./routes/elector");
 
-app.use("/admin", adminRoute);
+app.use(adminRoute);
 app.use(electorRoute);
 
 app.use("/", errorController.GetNotFound);

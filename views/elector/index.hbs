@@ -11,30 +11,32 @@
   </head>
 
   <body>
-
-  <div class="card border-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Digite su cedula</div>
-  <div class="card-body text-primary">
-
-    <div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="Cedula" class="col-form-label">Cedula</label>
-  </div>
-  <div class="col-auto">
-    <input type="" id="Cedula" class="form-control" aria-describedby="">
-  </div>
-  <div class="col-auto">
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
-  </div>
     
-  </div>
-</div>
-
-
-
     <div>
-      <a href="/admin/index"> Inicio de sesion para administradores</a>
+      <a href="/index" class="btn btn-light float-end me-5"> Inicio de sesion para administradores </a>
+    </div>
+
+    <div class="card col-md-4 offset-md-4 mt-3">
+
+      <div class="card-body">
+        <form action="">
+
+          <label for="cedula" class="form-label">Cedula de identidad y electoral</label>
+          <input
+            type="text"
+            class="form-control"        
+            id="indexCedula"
+            name="indexCedula"
+          />
+          <div id="passwordHelpBlock" class="form-text">
+            Introduzca su cedula sin guiones
+          </div>
+
+          <a href="/elector-menu" class="btn btn-primary float-end"> Iniciar votacion</a>
+        </form>
+
+      </div>  
+
     </div>
 
     <script src="/assets/js/vendors/bootstrap/bootstrap.min.js"></script>

@@ -9,30 +9,46 @@
     />
     <title>Document</title>
   </head>
+
   <body>
-   <div class="card border-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Inicio admin</div>
-  <div class="card-body text-primary">
 
-    <div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="Cedula" class="col-form-label">Codigo de admin</label>
-  </div>
-  <div class="col-auto">
-    <input type="" id="Cedula" class="form-control" aria-describedby="">
-  </div>
-  <div class="col-auto">
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
-  </div>
-    
-  </div>
-</div>
+    <div>
+      <a href="/" class="btn btn-light float-end me-5"> Pagina de inicio </a>
+    </div>
 
-<div> 
-  <a href="/"> Pagina de inicio </a>
-</div>
+    <div class="card col-md-4 offset-md-4 mt-3">
 
+      <div class="card-body">
+        <h4>Inicio de sesion de administradores</h4>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleInputPassword1"
+              class="form-label"
+            >Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+
+          <a href="/menu" class="btn btn-primary float-end">Submit</a>
+        </form>
+
+      </div>
+
+    </div>
 
     <script src="/assets/js/vendors/bootstrap/bootstrap.min.js"></script>
   </body>
