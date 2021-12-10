@@ -5,6 +5,14 @@ const AdminController = require("../controllers/AdminController");
 
 router.get("/index", AdminController.GetAdminHome);
 router.get("/menu", AdminController.GetAdminMenu);
+router.get("/puestos-electivos-mantenimiento", AdminController.GetMantPuestosElectivos);
+router.get("/partidos-mantenimiento", AdminController.GetMantPartidos);
+router.get("/candidatos-mantenimiento", AdminController.GetMantCandidatos);
+router.get("/ciudadanos-mantenimiento", AdminController.GetMantCiudadanos);
+router.get("/elecciones-mantenimiento", AdminController.GetMantElecciones);
 
 
-module.exports = router;
+
+
+
+module.exports = router; 
